@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisierung</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <style>
+        body, h1 { margin: 0px; padding: 0px}
+
+        header, footer {
+            background-color: lightskyblue;
+            color:white;
+            padding: 10px 20px;
+            margin: 0px;;
+        }
+
+        main {
+            margin: 20px 20px;
+        }
+
+        nav#social-links>ul { 
+            list-style: none;
+            padding: 0px;
+        }
+
+        nav#social-links>ul { display: flex; }
+        nav#social-links>ul>li { padding: 0px 5px }
+        nav#social-links>ul>li>a { text-decoration: none; }
+
+        section#beispiele {
+            display: flex;
+        }
+
+        figure>img {width: 100%}
+    </style>
+</head>
+<body>
+    <header id="start">
+        <h1>Wunderbare Welt (<i title="welt" class="fa fa-globe-europe"></i>) der Visualierung</h1>
+        <nav id="inhalt">Inhalt
+            <ul>
+                <li><a href="#c_1">1 Bildsprache</a></li>
+                <li><a href="#c_2">2 Font Awesome</a>
+                    <ul><li><a href="#c_2_1">2.1 Einbindung</a></li>
+                        <li><a href="#c_2_2">2.2 Anwendung</a></li>
+                        <li><a href="#c_2_3">2.3 Unter der Haube</a></li>
+                    </ul>
+                </li>
+                <li><a href="#c_3">3 Deine Aufgabe</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="c_1">1 Bildsprache (<i title="Bild" class="fa fa-image"></i> <i title="Sprache" class="fa fa-language"></i>)</h2>
+        <p>Das beste Werkzeug zur Informationsaufnahme, ist unser Gehirn (<i title="Gehirn" class="fa fa-brain"></i>). Und unsere einzige Breitband-Verbindung dorthin sind unsere Augen (<i title="Augen" class="fa fa-eye"></i>).</p>
+        <p>Wir alle haben schon gehört, ein Bild sagt mehr als 1000 Worte.</p>
+        <h2 id="c_2">2 Font Awesome</h2>
+        <p>Font Awesome ist eine Sammlung von Bildsymbolen, die wir in unseren Seiten verwenden können, ähnlich wie Google-Fonts. Statt schöner Buchstaben, bekommen wir aber Piktogramme, Icons, Symbole, etc.</p>
+        <h3 id="c_2_1">2.1 Einbindung</h3>
+        <p>Du kannst die nötigen Dateien von <a href="https://fontawesome.com/">Font-Awesome</a> herunterladen und mit Deinem Projekt selbst hosten, oder einen <a href="https://cdnjs.com/libraries/font-awesome">CDN-Link-Anbieter</a> benutzen.</p>
+        <h3 id="c_2_2">2.2 Anwendung</h3>
+        <p>Um Fontawesome Symbole in Deiner Seite zu benutzen, schreibst Du bestimmte CSS Klassen an geeignete <strong>Inline</strong>-Element in Deiner Seite.</p>
+        <p>Welche Klassen Du verwenden musst, findest Du in der <a href="https://fontawesome.com/icons?d=gallery">Symbol-Galerie des Anbieters</a>. Viele Symbole kannst Du frei verwenden, für einige brauchst du ein kostenpflichtiges Konto.</p>
+        <h3 id="c_2_3">2.3 Unter der Haube</h3>
+        <p>Der Trick liegt darin, vor den verwendeten Inline-Elementen das immer vorhandene <code>::before</code>-Pseudo-Element mit einem Unicode-Symbol zu füllen. Als Schriftart für diese <code>::before</code>-Elemente bindet Font Awesome eben seine Symbole ein. Und schon entstehen statt langweiliger Buchstaben, hübsche Symbole</p>
+        <h2 id="c_3">3 Deine Aufgabe:</h2>
+        <p>Es folgen ein paar Infografiken, die Symbole verwenden. Baue einzelne oder mehrere davon mit Symbolen aus der Font Awesome Galerie sinngemäß nach. Die Grafiken müssen nicht perfekt und exakt nachgestellt werden. Es geht darum das Konzept zu verstehen.</p>
+        <section id="beispiele">
+        <figure>
+            <img src="covid-regeln.png">
+            <figcaption>Verhaltensregeln (einfach)</figcaption>
+        </figure>
+        <figure>
+            <img src="assasins.png">
+            <figcaption>Tipps für (Code-) Assasins (einfach)</figcaption>
+        </figure>
+        <figure>
+            <img src="images/covid-19.jpeg">
+            <figcaption>Infografik Covid-19 Stadt Leipzig (für schnelle)</figcaption>
+        </figure>
+      
+    </section>
+    </main>
+    <footer>
+        <nav id="social-links">
+            Social Links, als Beispiele für Marken-Symbole (in fa<strong>b</strong> mit b für brands/Marken)
+            <ul>
+                <li><a class="fab fa-facebook" href="">FB</a></li>
+                <li><a class="fab fa-twitter" href="">Twitter</a></li>
+                <li><a class="fab fa-github" href="">GitHub</a></li>
+                <li><a class="fab fa-instagram" href="">Insta</a></li>
+                <li><a class="fab fa-whatsapp" href="">Whatsapp</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
